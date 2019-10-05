@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sydney"
+                android:layout_width="375dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="20dp"
+                android:drawableEnd="@drawable/sydney"
+                android:drawableRight="@drawable/sydney"
+                android:background="@android:color/holo_orange_dark"
+                android:gravity="center"
+                android:text="@string/sydney"
+                android:textSize="34sp"
+                android:visibility="visible" />
+
+            <Space
+                android:id="@+id/space1"
+                android:layout_width="0dp"
+                android:layout_height="35dp" />
+
+            <TextView
+                android:id="@+id/paris"
+                android:layout_width="375dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="20dp"
+                android:drawableEnd="@drawable/paris"
+                android:drawableRight="@drawable/paris"
+                android:background="@android:color/holo_orange_dark"
+                android:gravity="center"
+                android:text="@string/paris"
+                android:textSize="34sp" />
+
+            <Space
+                android:id="@+id/space2"
+                android:layout_width="0dp"
+                android:layout_height="35dp" />
+
+            <TextView
+                android:id="@+id/la"
+                android:layout_width="375dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="20dp"
+                android:background="@android:color/holo_orange_dark"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="20dp"
+                android:drawableEnd="@drawable/la"
+                android:drawableRight="@drawable/la"
+                android:gravity="center"
+                android:text="@string/la"
+                android:textSize="34sp" />
+
+            <Space
+                android:id="@+id/space3"
+                android:layout_height="35dp"
+                android:layout_width="0dp" />
+
+            <TextView
+                android:id="@+id/newYork"
+                android:layout_width="375dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableEnd="@drawable/ny"
+                android:drawableRight="@drawable/ny"
+                android:gravity="center"
+                android:background="@android:color/holo_orange_dark"
+                android:text="@string/newyork"
+                android:textSize="34sp" />
+
+            <Space
+                android:id="@+id/space4"
+                android:layout_width="0dp"
+                android:layout_height="35dp" />
+
+            <TextView
+                android:id="@+id/shanghai"
+                android:layout_width="375dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:drawableEnd="@drawable/shanghai"
+                android:drawableRight="@drawable/shanghai"
+                android:gravity="center"
+                android:background="@android:color/holo_orange_dark"
+                android:text="@string/shanghai"
+                android:textSize="34sp" />
+            <Space
+                android:id="@+id/space5"
+                android:layout_height="35dp"
+                android:layout_width="0dp"
+                 />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/switchTo12HR"
+        android:layout_width="210dp"
+        android:layout_height="62dp"
+        android:layout_gravity="end"
+        android:onClick="switchTo12HRTime"
+        android:text="@string/time2"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Button
+        android:id="@+id/switchTo24HR"
+        android:layout_width="210dp"
+        android:layout_height="62dp"
+        android:layout_gravity="start"
+        android:onClick="switchTo24HRTime"
+        android:text="@string/time1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

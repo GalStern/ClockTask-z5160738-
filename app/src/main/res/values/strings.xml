@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">ClockTask</string>
+
+    <string name="sydney">
+        <br>
+        Sydney \n
+        </br>
+    </string>
+
+    <string name = "paris">
+        <br>
+            Paris \n
+        </br>
+    </string>
+    <string name = "la">
+        <br>
+            Los Angeles \n
+        </br>
+    </string>
+    <string name = "newyork">
+        <br>
+            New York \n
+        </br>
+    </string>
+    <string name = "shanghai">
+        <br>
+            Shanghai \n
+        </br>
+    </string>
+    <string name = "time1">
+        <br>
+            12 HR \n
+        </br>
+    </string>
+    <string name = "time2">
+        <br>
+            24 HR \n
+        </br>
+    </string>
+</resources>
